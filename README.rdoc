@@ -19,6 +19,58 @@ To deploy a Rails application first you need to open the terminal and navigate t
 
 	sudo speedy deploy
 
+As default this command will deploy the application with the root folder name.
+
+E.g. If your application folder name is ‘example’, this will create the virtual host as ‘example.local’.
+
+If you wish, you can explicitly specify a name for the virtual host when you run the deploy command.
+
+  sudo speedy deploy custom_name.local
+
+---
+
+  sudo speedy deploy <root dir name>.local
+  
+  sudo speedy deploy
+
+Are equivalent.
+
+=== Clean Apache – Passenger (ModRails) configurations
+
+You can use speedy to do clean Apache – ModRails configuration.
+
+Step 01 : Install Passenger gem
+
+  sudo gem install  passenger
+
+Step 02 : Install the Apache module
+
+  passenger-install-apache2-module
+
+Step 03: Copy the “Load module” configuration in to the Clipboard.
+
+Step 04: Now without doing any further configurations install Speedy
+
+  sudo gem install speedy
+
+Step 05: Tell the speedy to do the clean Passenger configurations
+
+  sudo speedy config-passenger
+
+Step 06: Speedy will open a blank file in vi editor. Paste the “Load module” configurations save and exit (Unix command => “ :wq”).
+
+That’s it.  In this process Speedy keeps spate the passenger configs without mixing them main server configuration file like apache2.conf (in Linux) files.
+
+
+=== Update Passenger
+
+Once you install the latest version of Passenger, just run the same command.
+
+  sudo speedy config-passenger
+
+Speedy will open the same configuration file. Just change the version of the Passenger, save and exit.
+
+
 
 == Help
 
