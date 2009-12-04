@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>deploy! (Speedy::Deploy)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/speedy/deploy.rb, line 11</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">deploy!</span>
+          <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@platform</span>.<span class="ruby-identifier">match</span>(<span class="ruby-value str">'linux'</span>)
+            <span class="ruby-constant">Speedy</span><span class="ruby-operator">::</span><span class="ruby-constant">LinuxDeployment</span>.<span class="ruby-identifier">new</span>
+          <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@platform</span>.<span class="ruby-identifier">match</span>(<span class="ruby-value str">'darwin'</span>)
+            <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;-&quot;</span> <span class="ruby-operator">*</span> <span class="ruby-value">65</span> 
+            <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Wohooo it's a Mac.&quot;</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;This version (0.1.0) only supports for Linux.&quot;</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;-&quot;</span> <span class="ruby-operator">*</span> <span class="ruby-value">65</span> 
+          <span class="ruby-keyword kw">else</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Sorry, Speedy dosen't support to your Operating System!&quot;</span>
+          <span class="ruby-keyword kw">end</span>
+
+        <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

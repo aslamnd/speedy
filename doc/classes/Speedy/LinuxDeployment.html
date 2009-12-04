@@ -86,9 +86,20 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
+      <a href="#M000016">add_hosts_entry</a>&nbsp;&nbsp;
+      <a href="#M000018">conclusion</a>&nbsp;&nbsp;
+      <a href="#M000009">config_passenger</a>&nbsp;&nbsp;
+      <a href="#M000012">construc_app_name</a>&nbsp;&nbsp;
+      <a href="#M000014">construct_apache_touch_file</a>&nbsp;&nbsp;
+      <a href="#M000013">construct_document_root</a>&nbsp;&nbsp;
+      <a href="#M000011">create_virtual_host</a>&nbsp;&nbsp;
       <a href="#M000008">deploy</a>&nbsp;&nbsp;
+      <a href="#M000010">display_help</a>&nbsp;&nbsp;
       <a href="#M000007">do_action</a>&nbsp;&nbsp;
+      <a href="#M000017">enable_site</a>&nbsp;&nbsp;
       <a href="#M000006">new</a>&nbsp;&nbsp;
+      <a href="#M000019">separator</a>&nbsp;&nbsp;
+      <a href="#M000015">virtual_host_exists?</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -157,6 +168,125 @@
 
       <h3 class="section-bar">Public Instance methods</h3>
 
+      <div id="method-M000016" class="method-detail">
+        <a name="M000016"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000016.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000016.html');return false;">
+          <span class="method-name">add_hosts_entry</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Add the application name to /etc/hosts file
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000018" class="method-detail">
+        <a name="M000018"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000018.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000018.html');return false;">
+          <span class="method-name">conclusion</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Display final success message
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000009.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000009.html');return false;">
+          <span class="method-name">config_passenger</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Preform Apache-Passenger clean configuration for Linux
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000012.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000012.html');return false;">
+          <span class="method-name">construc_app_name</span><span class="method-args">(args)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Construct app name
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000014.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000014.html');return false;">
+          <span class="method-name">construct_apache_touch_file</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Contruct the apache touch file removing &#8217;.&#8217;
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000013.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000013.html');return false;">
+          <span class="method-name">construct_document_root</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Construct the application public folder path
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000011.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000011.html');return false;">
+          <span class="method-name">create_virtual_host</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Create virtual host for default name unless the user provide a name
+</p>
+        </div>
+      </div>
+
       <div id="method-M000008" class="method-detail">
         <a name="M000008"></a>
 
@@ -171,6 +301,23 @@
         </div>
       </div>
 
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000010.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000010.html');return false;">
+          <span class="method-name">display_help</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Display all available commands and options
+</p>
+        </div>
+      </div>
+
       <div id="method-M000007" class="method-detail">
         <a name="M000007"></a>
 
@@ -182,6 +329,54 @@
         </div>
       
         <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000017" class="method-detail">
+        <a name="M000017"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000017.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000017.html');return false;">
+          <span class="method-name">enable_site</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Run Apache command to enable the site
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000019" class="method-detail">
+        <a name="M000019"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000019.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000019.html');return false;">
+          <span class="method-name">separator</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+        </div>
+      </div>
+
+      <div id="method-M000015" class="method-detail">
+        <a name="M000015"></a>
+
+        <div class="method-heading">
+          <a href="LinuxDeployment.src/M000015.html" target="Code" class="method-signature"
+            onclick="popupCode('LinuxDeployment.src/M000015.html');return false;">
+          <span class="method-name">virtual_host_exists?</span><span class="method-args">(host)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Check whether a virtual host exists in the same name
+</p>
         </div>
       </div>
 

@@ -35,19 +35,19 @@ module Speedy
       conclusion
     end
 
-
-    private #==============================================
-
+    # Preform Apache-Passenger clean configuration for Linux
     def config_passenger
       Speedy::PassengerConfig.run!
     end
 
+    # Display all available commands and options
     def display_help
       puts "# sudo speedy config-passenger"
       puts "# sudo speedy deploy"
       puts "# sudo speedy deploy <custom_name>.local"
     end
 
+    # Create virtual host for default name unless the user provide a name
     def create_virtual_host
       apache_touch_file = construct_apache_touch_file
       virtual_host_exists?(apache_touch_file)
@@ -117,6 +117,7 @@ module Speedy
       system "sudo /etc/init.d/apache2 restart"
     end
 
+    # Display final success message
     def conclusion
       separator
       puts "#{@app_name} successfully deployed! URL: http://#{app_name}"
