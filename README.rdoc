@@ -25,7 +25,7 @@ To deploy a Rails application first you need to open the terminal and navigate t
 To view all available commands, run it with the +--help+ or +-h+ option.
 
   speedy --help
-	speedy -h
+  speedy -h
 
 
 
