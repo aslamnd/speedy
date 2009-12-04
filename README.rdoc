@@ -39,7 +39,7 @@ Are equivalent.
 
 You can use speedy to do clean Apache – ModRails configuration.
 
-*Step 01:* Install Passenger gem
+_Step 01:_ Install Passenger gem
 
   sudo gem install  passenger
 
