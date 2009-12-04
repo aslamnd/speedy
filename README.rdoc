@@ -1,0 +1,39 @@
+= Speedy 
+
+Speedy is a utility for Phusion Passenger / ModRails, specifically develop to automate the process of creating virtual host and deployments in development environment.
+
+== Install
+
+  gem install speedy
+
+You may need to uninstall the older version if it's installed.
+
+  gem uninstall speedy
+
+
+== Usage
+
+=== Deployment
+
+To deploy a Rails application first you need to open the terminal and navigate to particular application root folder and type
+
+	sudo speedy deploy
+
+
+== Help
+
+To view all available commands, run it with the +--help+ or +-h+ option.
+
+  speedy --help
+	speedy -h
+
+
+
+== Development
+
+This project can be found on github at the following URL.
+
+http://github.com/mohamedaslam/speedy
+
+If you wish the generators behaved differently, please consider
+forking the project and modifying to your heart's content.
