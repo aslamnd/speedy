@@ -17,7 +17,7 @@ You may need to uninstall the older version if it's installed.
 
 To deploy a Rails application first you need to open the terminal and navigate to particular application root folder and type
 
-	sudo speedy deploy
+  sudo speedy deploy
 
 As default this command will deploy the application with the root folder name.
 
