@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name = 'speedy'
  
   # This gem’s version. Required.
-  s.version = '0.1.0'
+  s.version = '0.1.1'
  
   # The date this gem was created. Required. Default = `Time.now`
   #s.date = '2009-11-15'
@@ -18,16 +18,16 @@ Gem::Specification.new do |s|
   #EOF
  
   # The list of authors who wrote this gem
-  # s.authors = %w( Mohamed Aslam )
+  # s.authors = %w( Aslam Najeebdeen )
   
   # Singular accessor for authors
-  s.author = 'Mohamed Aslam'
+  s.author = 'Aslam Najeebdeen'
  
   # The URL of this gem’s home page
-  s.homepage = 'http://speedy.mohamedaslam.com'
+  s.homepage = 'http://speedy.frontcube.com'
  
   # A contact email for this gem
-  s.email = 'aslam@weblivestudio.com'
+  s.email = 'aslam@frontcube.com'
  
   # The path in the gem for executable scripts. Default = 'bin'
   s.bindir = 'bin'
