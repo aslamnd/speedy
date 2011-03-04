@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name = 'speedy'
  
   # This gem’s version. Required.
-  s.version = '0.1.1'
+  s.version = '0.1.2'
  
   # The date this gem was created. Required. Default = `Time.now`
   #s.date = '2009-11-15'

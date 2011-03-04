@@ -1,1 +1,14 @@
 *.gem
+.DS_Store
+.bundle
+log/*.log
+*.log
+tmp/**/*
+tmp/*
+coverage/*
+coverage.data
+*~
+*.tmproj
+doc/api
+doc/app
+*.swp

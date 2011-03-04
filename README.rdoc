@@ -85,7 +85,7 @@ To view all available commands, run it with the +--help+ or +-h+ option.
 
 This project can be found on github at the following URL.
 
-http://github.com/mohamedaslam/speedy
+http://github.com/aslamnd/speedy
 
 If you wish the generators behaved differently, please consider
 forking the project and modifying to your heart's content.

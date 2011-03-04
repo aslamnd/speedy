@@ -1,2 +1,8 @@
 0.1.0
 	- Initial release
+
+0.1.1
+	- Changed the site, documentation and GitHub URLs.
+
+0.1.2
+	- Compatible with Rails 3 

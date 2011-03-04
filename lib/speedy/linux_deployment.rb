@@ -55,7 +55,7 @@ module Speedy
       File.open( apache_touch_file, 'w') do |file|
         file.puts "<VirtualHost *:80>\n"
         file.puts "\tServerName #{@app_name}\n"
-        file.puts "\tRailsEnv development\n"
+        file.puts "\tRackEnv development\n"
         file.puts "\tDocumentRoot #{document_root}\n"
         file.puts "</VirtualHost>"
       end
